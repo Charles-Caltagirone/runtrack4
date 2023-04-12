@@ -1,7 +1,6 @@
 <?php
 if (isset($_SESSION['login'])) {
     echo '<a href="./index.php">Accueil</a>';
-    echo '<a href="./php/profil.php">Profil</a>';
     echo '<a href="./php/reservation.php">Réservation</a>';
     if ($_SESSION["login"] == "admin") {
         echo '<a href="./php/admin.php">Admin</a>';

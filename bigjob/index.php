@@ -9,7 +9,7 @@ require "./php/include/config.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,14 +28,14 @@ require "./php/include/config.php";
     </header>
 
     <main>
-        <h1 class="">
+        <h1 class="title">
             <?php
             if (isset($_SESSION['login'])) {
                 echo "Bon retour ".strtoupper($_SESSION['login'])." !";
             }else{
                 echo "Bienvenue cher inconnu !";
             }
-            var_dump($_SESSION);
+            // var_dump($_SESSION);
             ?>
         </h1>
     </main>
